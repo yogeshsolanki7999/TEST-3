@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./sum.css">
+  </head>
+  <body>
+    <h1>THE SUM OF EVEN AND NUMBERS UPTO N IS BELOW</h1>
+    <div>
+      <script>
+        var n = prompt(
+          "ENTER A NUMBER UPTO YOU WANT TO PRINT SUM OF EVEN ODD"
+        );
+        var EVEN = 0;
+        var ODD= 0;
+        for (var i = 0; i <= 10; i++) {
+          if (i % 2 == 0) {
+            EVEN = EVEN + i;
+          } else {
+            ODD = ODD + i;
+          }
+        }
+        document.write("SUM OF ALL EVEN NUMBERS ARE  = " + EVEN);
+        document.write("<br>")
+        document.write("SUM OF ALL ODD NUMBERS ARE    = " + ODD);
+      </script>
+    </div>
+  </body>
+</html>

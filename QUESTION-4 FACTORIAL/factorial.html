@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./fact.css" />
+  </head>
+  <body>
+    <h1>THE RESULT OF YOU FACTORIAL IS YOU CAN WATCH THIS ON CONSOLE ALSO</h1>
+
+    <div>
+      <script>
+        var number = prompt("ENTER YOUR NUMBER");
+
+        function fact(num) {
+          var result = num;
+          if (num === 0 || num === 1) return 1;
+          while (num > 1) {
+            num--;
+            result *= num;
+          }
+          return result;
+        }
+        var result = fact(number);
+        console.log(result);
+        document.write( "YOU ANSWER IS "+result);
+      </script>
+    </div>
+  </body>
+</html>
